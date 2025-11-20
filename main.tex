@@ -1,0 +1,138 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{acronym}
+\geometry{margin=2.5cm}
+
+\begin{document}
+\begin{titlepage}
+\centering
+{\Large Universidade da Beira Interior \\[0.2cm]
+Engenharia Informática — Laboratórios de Programação \\[2cm]}
+{\Huge \textbf{Operações com Vetores em C} \\[2cm]}
+{\Large Rodrigo Marques \\[0.5cm]}
+\end{titlepage}
+\chapter*{Resumo}
+Este relatório descreve a crição de um programa em linguagem C que realiza operações com vetores de números inteiros.  
+O programa pede ao utilizador 14 números inteiros, validando a entrada, e disponibiliza um menu interativo para cálculos e manipulações do vetor.  
+Foram adicionadas funções para ordenação, cálculo de raízes, criação de matrizes, etc.
+
+\textbf{Palavras-chave:} C, vetores, matrizes, funções, programação estruturada, validação de dados.
+
+
+\chapter*{Acrónimos}
+\begin{acronym}[TAM]
+\acro{TAM}{Tamanho do vetor}
+\end{acronym}
+
+\chapter{Introdução}
+\section{Objetivos do Trabalho}
+O objetivo do trabalho consiste em criar um programa que solicita ao utilizador 14 números inteiros entre -3 e 27, valida a entrada e apresenta um menu de operações com o vetor.  
+O objetivo principal é implementar todas as funcionalidades garatindo que funcionem corretamente. 
+
+
+\section{Abordagem}
+A abordagem envolveu a implementação em C, utilizando ficheiros separados (.c e .h) para organizar as funções.  
+Foram utilizadas bibliotecas padrão como \texttt{stdio.h}, \texttt{stdlib.h}, \texttt{time.h} e \texttt{math.h}.  
+O programa é compilado via \texttt{makefile}, otimizando a compilação e ligação do código.
+
+\section{Organização do Documento}
+O relatório está estruturado da seguinte forma:
+\begin{itemize}
+    \item Capítulo 2: Estado-da-Arte.
+    \item Capítulo 3: Planeamento e tecnologias utilizadas.
+    \item Capítulo 4: Execução e desenvolvimento do programa.
+    \item Capítulo 5: Testes, validação e análise de resultados.
+    \item Capítulo 6: Conclusões..
+    \item Bibliografia.
+\end{itemize}
+
+\chapter{Estado-da-Arte}
+As funções exploram conceitos básicos de programação estruturada, como vetores, matrizes e operações matemáticas básicas.  
+A utilização de bibliotecas padrão (\texttt{math.h}, \texttt{stdlib.h}) facilita a execução de operações como raízes quadradas e geração de números aleatórios.
+\chapter{Planeamento e Tecnologias}
+\section{Tecnologias Utilizadas}
+\begin{itemize}
+    \item \textbf{Linguagem C:} Para implementação de todo o código.
+    \item \textbf{Bibliotecas padrão:} \texttt{stdio.h}, \texttt{stdlib.h}, \texttt{time.h}, \texttt{math.h}.
+    \item \textbf{Makefile:} Para aumatizaçao da compilação e ligação..
+\end{itemize}
+
+\section{Planeamento}
+O desenvolvimento do programa seguiu os seguintes passos:
+\begin{enumerate}
+    \item Definição do tamanho do vetor com a constante (\texttt{TAM}).
+    \item Requisição ao utilizador de 14 números inteiros.
+    \item Implementação de validação de entrada.
+    \item Criação do menu interativo no ficheiro \texttt{main-PL403.c}.
+    \item Criação de funções para operações(ordenar, somar, gerar matrizes, calcular raízes quadradas, etc.).
+    \item Testes com valores válidos e inválidos.
+    \item Ajustes e correção de possiveis erros no código.
+\end{enumerate}
+
+\chapter{Execução e Desenvolvimento}
+\section{Introdução}
+O programa solicita ao utilizador 14 números inteiros e valida se estão no intervalo.  
+Um menu interativo aparece e permite selecionar diferentes operações com o vetor.
+
+\section{Detalhes de Implementação}
+\begin{itemize}
+    \item \texttt{ordenarvetor()}: ordena elementos em ordem crescente.
+    \item \texttt{simetricovetor()}: calcula vetor simétrico e ordena.
+    \item \texttt{somavetor()}: soma elementos da primeira metade com a segunda.
+    \item \texttt{multiplovetor()}: exibe elementos em posições múltiplas de 3.
+    \item \texttt{aleatoriovetor()}: retorna um elemento aleatório.
+    \item \texttt{matrizvetor()}: gera matriz derivada do vetor.
+    \item \texttt{raizvetor()}: calcula raízes quadradas, ignorando negativos.
+    \item \texttt{misturavetor()}: mistura vetor inicial com um novo vetor inserido pelo utilizador.
+    \item \texttt{mdcvetor()}: calcula máximo divisor comum de elementos consecutivos.
+    \item \texttt{matriz2vetor()}: matriz produto do vetor original pelo vetor ordenado.
+    \item \texttt{transpostavetor()}: matriz transposta da anterior.
+\end{itemize}
+\section{Exemplos de Entrada e Saída}
+\begin{itemize}
+    \item Entrada do utilizador: -1, -2, 1, 15, 22, 4, 5, 6, -3, 8, 9, 10 , 1, 0
+    \item Saída para \texttt{simetricovetor()}: -22, -15, -10, -9, -8, -6, -5, -4, -1, -1, 0, 1, 2, 3
+    \item Saída para \texttt{somavetor()}: 5, -5, 9, 24, 32, 5, 5
+\end{itemize}
+
+\section{Dependências}
+O projeto depende das bibliotecas padrão de C e do \texttt{makefile} para compilação.  
+
+\chapter{Testes e Validação}
+\section{Especificação dos Testes}
+Foram definidos testes para cada função:
+\begin{itemize}
+    \item Entrada de valores válidos e inválidos para verificar a validação.
+    \item Verificação da saída correta para operações matemáticas e matrizes.
+    \item Teste de funções aleatórias para confirmar variação entre execuções.
+\end{itemize}
+
+\section{Execução dos Testes}
+Cada função foi executada individualmente, usando diferentes vetores, para garantir que todas as operações estavam corretas.
+
+\section{Análise dos Resultados}
+Os testes confirmaram que:
+\begin{itemize}
+    \item A validação de entrada impede números fora do intervalo permitido.
+    \item As operações retornam resultados corretos.
+    \item Os elementos aleatórios variam entre execuções.
+\end{itemize}
+
+\chapter{Conclusões}
+Todos os objetivos foram atingidos.  
+O desenvolvimento do programa promoveu a aquisiçáo de competências e aprimoração  das mesmas em programação.
+
+\chapter*{Bibliografia}
+\begin{itemize}
+\item Kernighan, B. W., \& Ritchie, D. M. (1988). \textit{The C Programming Language}. Prentice Hall.
+\item Curso de C - Playlist no YouTube.: \url{https://www.youtube.com/watch?v=2w8GYzBjNj8&list=PLpaKFn4Q4GMOBAeqC1S5_Fna_Y5XaOQS2}
+\item \url{https://cdn-images.rtp.pt/mcm/pdf/d33/d3371c71ad509bd6d25290ab8b6d68c51.pdf}
+\end{itemize}
+
+\end{document}
