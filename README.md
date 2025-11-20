@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/23665002/README.md)
 # TRABALHO LABORATÓRIOS DE PROGRAMAÇÃO PL403
 Este projeto implementa um conjunto de funções em C. Inclui documentação automática gerada com doxygen e um makefile que trata da compilação do programa.
 
