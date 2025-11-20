@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /** 
  * @mainpage TRABALHO DE LABORATÓRIOS DE PROGRAMA - DOCUMENTAÇÃO DO PROGRAMA
 
@@ -14,7 +14,6 @@ Documentação do programa.
 Este programa introduz várias operações envolvendo vetores e matrizes.
 
 ## Funcionalidades
->>>>>>> ec874d963f15a8720625ee49ebf6003309c4cae4
 -Ordenar vetores
 -Calcular raízes
 -Fazer matrizes
@@ -24,7 +23,6 @@ Este programa introduz várias operações envolvendo vetores e matrizes.
 # Arquivos
 =======
 ## Arquivos
->>>>>>> ec874d963f15a8720625ee49ebf6003309c4cae4
 -main-PL403.c
 -functions-PL403.c
 -funcitons-PL403.h
