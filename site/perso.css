@@ -1,0 +1,16 @@
+body, .contents, .header, .navpath {
+	background-color: #f4f4f4 !important;
+	color: #000 !important;
+}
+#projectname {
+	padding-top: 5px !important;
+	margin.top: 5px !important;
+}
+.textblock {
+	padding: 20px !important;
+}
+div.header, #titlearea{
+	background-color: #ffffff !important;
+	border-bottom: 1px solid #ccc !important;
+	padding: 10px !important;
+}
