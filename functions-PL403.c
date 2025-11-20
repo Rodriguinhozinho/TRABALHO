@@ -1,7 +1,8 @@
 /**
  * @file functions-PL403.c
  * @brief Implementação de operações com vetores.
- *
+ * 
+ * @details Este ficheiro contém o corpo das funções que realizam as operações.
  * As funções realizam operações como ordenação, simetria, soma por metades, geração aleatória, etc.
  */
 
@@ -12,7 +13,8 @@
 #include <math.h>
 #include "functions-PL403.h"
 /**
- * @brief Ordena vetores em ordem crescente usando a tecnica bubble sort.
+ * @brief Ordena vetores em ordem crescente.
+ * @details Esta função utiliza o método bubble sort  para ordenar os elementos em ordem crescente, é uma função auxiliar.
  * Ao longo do programa várias outras funçõs vão depender desta.
  */
 void ordenarvetor(int vetor[]){
@@ -29,7 +31,7 @@ void ordenarvetor(int vetor[]){
 }
 /**
  * @brief Gera o vetor simétrico e ordena-o.
- * @param vetor[] é o vetor original com tamanho TAM.
+ * @param simetrico[] é o vetor simétrico a ser calculado a partir do vetor original.
  */
 void simetricovetor(int vetor[]){ 
         int i, simetrico[TAM];
@@ -44,7 +46,7 @@ void simetricovetor(int vetor[]){
 }
 /**
  * @brief Soma os primeiros elementos da primeira parte do vetor com os da segunda metade.
- * @param vetor[] é o vetor original com tamanho TAM.
+ * @param soma é o resultado da soma da primeira metade do vetor com a segunda metade.
  */
 void somavetor(int vetor[]){
         int i, soma;
@@ -55,7 +57,6 @@ void somavetor(int vetor[]){
 }
 /**
  * @brief Mostra os elementos do vetor que estão em posições múltiplas de 3.
- * @param vetor[] é o vetor original com tamanho TAM.
  */
 void multiplovetor(int vetor[]){
         int i;
@@ -68,7 +69,7 @@ void multiplovetor(int vetor[]){
 }
 /**
  * @brief Mostra um elemento aleatório do vetor.
- * @para vetor[] é o vetor original com tamanho TAM.
+ * @details Esta função utiliza uma semente("seed") que acompanha o tempo da vida real o que garante que o número devolvido vai ser diferente a cada vez que o programa é executado.
  */
 void aleatoriovetor(int vetor[]){
         int i;
@@ -78,7 +79,7 @@ void aleatoriovetor(int vetor[]){
 }
 /**
  * @brief Cria uma matriz com tamanho TAMxTAM com permutações do vetor.
- * @param vetor[] é o vetor original com tamanho TAM.
+ * @param matriz[TAM][TAM] é a matriz que vai ser impressa a partir de permutações do vetor original.
  */
 void matrizvetor(int vetor[]){
         int i, j, matriz[TAM][TAM]; 
@@ -97,7 +98,8 @@ void matrizvetor(int vetor[]){
 }
 /**
  * @brief Calcula a matriz quadrada de cada elemento do vetor.(Ignora os valores negativos)
- * @param vetor[] é o vetor original com tamanho TAM.
+ * @details Esta função tem recurso á biblioteca "<math.h>" para a utilização da função "sqrt()".
+ * @param x é o valor da raiz em cada posição.
  */
 void raizvetor(int vetor[]){
         int i;
@@ -155,7 +157,7 @@ void misturavetor(int vetor[]){
 }
 /** 
  * @brief Calcula o máximo divisor comum entre dois valores consecutivos do vetor.
- * @param vetor[] é o vetor original com tamanho TAM.
+ * @param menor é o menor valor, mdc é o máximo divisor comum
  */
 void mdcvetor(int vetor[]){
         int i, x, y, z, menor, mdc;
@@ -185,7 +187,8 @@ void mdcvetor(int vetor[]){
 }
 /**
  * @brief Cria uma matriz onde cada elemento resulta do produto entre elementos do vetor original com o vetor ordenado.
- * @param vetor[] é o vetor original com tamanho TAM.
+ * @details Na matriz resultante, [i][j] é o produto de i do vetor original com j do vetor ordenado. 
+ * @param ordenado[TAM] é o vetor original ordenado por ordem crescente, original[TAM] é o vetor original e matriz2[TAM][TAM] vai ser a matriz resultante.
  */
 void matriz2vetor(int vetor[]){
         int i, j, ordenado[TAM], original[TAM], matriz2[TAM][TAM];
@@ -208,7 +211,8 @@ void matriz2vetor(int vetor[]){
 }
 /**
  * @brief Cria a matriz transposta da matriz que resulta do produto entre o vetor original e o vetor ordenado.
- * @param vetor[] é o vetor original com tamanho TAM.
+ * @details Esta função primeiro cria a matriz que origina do produto e depois imprime a sua transposta.
+ * @param ordenado[TAM] é o vetor original ordenado por ordem crescente, original[TAM] é o vetor original e matriz2[TAM][TAM] vai ser a matriz resultante e matriz2[j][i] é a transposta.
  */
 
 void transpostavetor(int vetor[]){

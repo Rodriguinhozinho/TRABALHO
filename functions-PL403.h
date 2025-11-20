@@ -1,14 +1,16 @@
 /** 
  * @file functions-PL403.h
- * @brief Declaração das funções usadas.
+ * @brief Contém as declarações de todas as funções usadas para manipular os vetores e matrizes.
+ 
  */
 #define TAM 6
 /**
  * @brief Ordena o vetor por ordem crescente.
+ * @param vetor[] é o vetor de interos a ser ordenado.
  */
 void ordenarvetor(int vetor[]);
 /** 
- * @brief Gera o vetor simétrico.
+ * @brief Gera o e ordena o vetor simétrico dos elementos.
  */
 void simetricovetor(int vetor[]);
 /**

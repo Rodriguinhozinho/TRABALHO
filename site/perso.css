@@ -1,16 +1,14 @@
-body, .contents, .header, .navpath {
-	background-color: #f4f4f4 !important;
+body, .contents, .header, .navpath, #doc-content, ui-rezisable-e {
+	background-color: #F0F4F7 !important;
 	color: #000 !important;
 }
 #projectname {
 	padding-top: 5px !important;
 	margin.top: 5px !important;
 }
-.textblock {
-	padding: 20px !important;
-}
+
 div.header, #titlearea{
-	background-color: #ffffff !important;
+	background-color: #FAFAFA !important;
 	border-bottom: 1px solid #ccc !important;
 	padding: 10px !important;
 }

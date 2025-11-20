@@ -1,6 +1,8 @@
 /**
  * @file main-PL403.c
- * @brief Programa principal.
+ * @brief Programa principal para a manipulação de vetores.
+ * * Este programa permite ao utilizador introduzir um vetor com valores válidos e aceder a um menu interativo para executar diversas operações.
+ * @author Rodrigo Marques
  */
 #include <stdio.h>
 #include <stdlib.h>
